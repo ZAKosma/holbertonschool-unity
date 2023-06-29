@@ -498,3 +498,4 @@ Received Import Request.
   path: Assets/Fonts/Changa/Changa-Regular SDF.asset
   artifactKey: Guid(e7ce3e9fed58c7e478da71f99dfa5ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Fonts/Changa/Changa-Regular SDF.asset using Guid(e7ce3e9fed58c7e478da71f99dfa5ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5af34634e1da3d7379eda4813a14d15d') in 0.026202 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
