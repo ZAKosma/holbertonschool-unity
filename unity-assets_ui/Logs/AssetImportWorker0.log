@@ -15,11 +15,11 @@ C:/Users/user/Documents/UnityProjects/Unity3dPlat/holbertonschool-unity/unity-as
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53273
+64994
 Successfully changed project path to: C:/Users/user/Documents/UnityProjects/Unity3dPlat/holbertonschool-unity/unity-assets_ui
 C:/Users/user/Documents/UnityProjects/Unity3dPlat/holbertonschool-unity/unity-assets_ui
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 47.51 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 54.31 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.43f1 (75bff06b76bf)
 [Subsystems] Discovering subsystems at path D:/Unity/Editor/2020.3.43f1/Editor/Data/Resources/UnitySubsystems
@@ -30,94 +30,94 @@ Direct3D:
     Renderer: NVIDIA GeForce RTX 3070 Ti Laptop GPU (ID=0x24a0)
     Vendor:   
     VRAM:     8032 MB
-    Driver:   31.0.15.3623
+    Driver:   31.0.15.3640
 Initialize mono
 Mono path[0] = 'D:/Unity/Editor/2020.3.43f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/Editor/2020.3.43f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity/Editor/2020.3.43f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56784
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56716
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/Editor/2020.3.43f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000534 seconds.
+Registered in 0.000723 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 39.21 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 41.03 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.394 seconds
+- Completed reload, in  0.464 seconds
 Domain Reload Profiling:
-	ReloadAssembly (394ms)
-		BeginReloadAssembly (39ms)
+	ReloadAssembly (464ms)
+		BeginReloadAssembly (46ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (311ms)
-			LoadAssemblies (38ms)
+		EndReloadAssembly (371ms)
+			LoadAssemblies (45ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (99ms)
+			SetupTypeCache (109ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (18ms)
-			SetupLoadedEditorAssemblies (125ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (150ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (39ms)
-				BeforeProcessingInitializeOnLoad (9ms)
-				ProcessInitializeOnLoadAttributes (55ms)
-				ProcessInitializeOnLoadMethodAttributes (18ms)
+				RefreshPlugins (41ms)
+				BeforeProcessingInitializeOnLoad (11ms)
+				ProcessInitializeOnLoadAttributes (68ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003521 seconds.
+Registered in 0.003770 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.872 seconds
+- Completed reload, in  1.047 seconds
 Domain Reload Profiling:
-	ReloadAssembly (873ms)
-		BeginReloadAssembly (88ms)
+	ReloadAssembly (1048ms)
+		BeginReloadAssembly (114ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (12ms)
-		EndReloadAssembly (747ms)
-			LoadAssemblies (69ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (889ms)
+			LoadAssemblies (79ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (194ms)
+			SetupTypeCache (218ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (405ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (487ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (74ms)
-				ProcessInitializeOnLoadAttributes (274ms)
-				ProcessInitializeOnLoadMethodAttributes (52ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (329ms)
+				ProcessInitializeOnLoadMethodAttributes (59ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (1ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2403 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 95.2 MB.
 System memory in use after: 95.4 MB.
 
 Unloading 60 unused Assets to reduce memory usage. Loaded Objects now: 2808.
-Total: 6.650500 ms (FindLiveObjects: 0.144500 ms CreateObjectMapping: 0.070800 ms MarkObjects: 6.331000 ms  DeleteObjects: 0.103000 ms)
+Total: 6.249800 ms (FindLiveObjects: 0.160600 ms CreateObjectMapping: 0.067600 ms MarkObjects: 5.928700 ms  DeleteObjects: 0.091900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -133,10 +133,340 @@ AssetImportParameters requested are different than current active one (requested
 Received Import Request.
   path: Assets/Prefabs/ExitButton.prefab
   artifactKey: Guid(39a4599ff2681594ba88053745a6b955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ExitButton.prefab using Guid(39a4599ff2681594ba88053745a6b955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44ab3567fb2cea7d930a2b34ce66f5c7') in 0.085758 seconds 
+Start importing Assets/Prefabs/ExitButton.prefab using Guid(39a4599ff2681594ba88053745a6b955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '535b49a891a0cf6a6c31f3f3f89534a2') in 0.095685 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.346631 seconds.
+  Time since last request: 81.405815 seconds.
   path: Assets/Prefabs/ExitButton.prefab
   artifactKey: Guid(39a4599ff2681594ba88053745a6b955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ExitButton.prefab using Guid(39a4599ff2681594ba88053745a6b955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffb769e5b30acfec5ca72df985d41cf8') in 0.011908 seconds 
+Start importing Assets/Prefabs/ExitButton.prefab using Guid(39a4599ff2681594ba88053745a6b955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aefd459a27e2b36cbeaf85dd32d9f591') in 0.015259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.657467 seconds.
+  path: Assets/Prefabs/ExitButton.prefab
+  artifactKey: Guid(39a4599ff2681594ba88053745a6b955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ExitButton.prefab using Guid(39a4599ff2681594ba88053745a6b955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38287d90ef214482232cf77e939a9fbd') in 0.014344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.220382 seconds.
+  path: Assets/Prefabs/ExitButton.prefab
+  artifactKey: Guid(39a4599ff2681594ba88053745a6b955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ExitButton.prefab using Guid(39a4599ff2681594ba88053745a6b955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '495d0eea761f9d55faffd11eeea84cc0') in 0.014821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.841144 seconds.
+  path: Assets/Prefabs/ExitButton.prefab
+  artifactKey: Guid(39a4599ff2681594ba88053745a6b955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ExitButton.prefab using Guid(39a4599ff2681594ba88053745a6b955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c25db7da24ba3e99b2343c30797c36a') in 0.015669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.009632 seconds.
+  path: Assets/Prefabs/ExitButton.prefab
+  artifactKey: Guid(39a4599ff2681594ba88053745a6b955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ExitButton.prefab using Guid(39a4599ff2681594ba88053745a6b955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4b6c87e03e56791479c2bb1a01d95e2') in 0.019164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4054.516149 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95a979a2f080694c474fb625688bb50a') in 0.021103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c62798cd3af8ef8971b338c2fc2304f3') in 0.017104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.499074 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1191e0008d9de3f152b0ff742809d62d') in 0.004711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b0e696e006f49fb10b01de01008aaf8') in 0.006971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.509517 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18205fef0821cc37350226e835addb6b') in 0.028305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81016988b228a8c8e22e04e49a629ed7') in 0.023235 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.675377 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48be5ee8491d15212f35b5ca15afc0cc') in 0.013341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f84b1a1a9bebea1f159497d3630779b9') in 0.015681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.285019 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b991db91828525b1f5ef3a4d3e2f69d5') in 0.014189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e0cbed19c77cb9a1e0ac12722460311') in 0.017221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.763187 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a56543f6a7907bffad74d04ccc3a8e0') in 0.013475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd290f0ab9ee96a88fba57948ca8bee7') in 0.021142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.926673 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13b248c249304f5453ee05c7668c4237') in 0.013640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92f787f1731fd40ff4c22e3584afa44b') in 0.013652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.984632 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfcb60d8b2dae112542e14ff8bde14d9') in 0.012216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000405 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '102d02d366ddadd523d5edb593e4f5a5') in 0.014057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.844097 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47652a7891bccb69dbc0cea13f5237c8') in 0.014212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7036a756cdae900c46daf82c065c40c') in 0.016153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.219691 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b03d9bb3e9001dc8b9b71f23fd96838') in 0.012186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65faa07cb44a1be11e66db217033d60e') in 0.015754 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.588706 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '886f71cdd1d880bebda45d96a81e3447') in 0.013612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000496 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb347ce12a008c8f45a0e6f7a4f1206a') in 0.017610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.763313 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba905136fd8c1afc075ba586ad1d1b10') in 0.014272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '139659a6b97fa7702762617b690d1fc8') in 0.015890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.774312 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '078286c908db73be34c3ab978cf651c8') in 0.013777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9abc8c09013224b40b32f382fea0c79e') in 0.014224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.404900 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bc7426ff6940e9be86e6ba2524b4b73') in 0.015585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000516 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '641b294701f15bfa7b71e87e3d46ed1a') in 0.017549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.394506 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52db6b2739fb538686e76a24518623ff') in 0.015236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b31d6d83238ad5f556d1e38d5e71562') in 0.016812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.810758 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02253ab69739f7eb1559f21b022e2f62') in 0.013619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3084c3a6f2e7b98476c81f852b17ab19') in 0.013824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.262713 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2d701a424f96bb8d2af8ce65f0c17e9') in 0.014443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c69a6ce6bb85ff12389217c69d96a71') in 0.014762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.772250 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d8fdf7ec852df420fc5c5122ba953d0') in 0.014249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dcbc8dbb3b098531cd1dc1aea10c088') in 0.015120 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 126.148002 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a59f89e03df7db8cc5b3e5268046cb48') in 0.016702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6997ba621784429ce0b614360bbe0dcd') in 0.025259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.272783 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff0266845a429ec2784122f17c91cb5f') in 0.013242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6922bd1020df93185d4ca21e0ca682da') in 0.014960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.998200 seconds.
+  path: Assets/Prefabs/ExitButton.prefab
+  artifactKey: Guid(39a4599ff2681594ba88053745a6b955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ExitButton.prefab using Guid(39a4599ff2681594ba88053745a6b955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cbcfd5612b6fea2c4675ac0538a2028') in 0.020561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.837671 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19452ab95d5f6bb8b08d10e90a0288be') in 0.013775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c55109b6dc2801baf209f16262dfb9f') in 0.016305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.371416 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7be90ee90b8ceb25662b57c8147cac76') in 0.012475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd82248e8882ac59644b29d3e7d6a25c5') in 0.015615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.990568 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a5b9c93c0131c45b43cc51fe3a898c1') in 0.006187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99ba236c3e6541c6b9ac805c3d0cb958') in 0.006626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.005429 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b9626ca9584d1a9e9592a9b19b12f66') in 0.012485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000384 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e973be47ceca5a351194ce0deff62dc5') in 0.014293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.076889 seconds.
+  path: Assets/Prefabs/OptionsButton.prefab
+  artifactKey: Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsButton.prefab using Guid(7f2d87c8bedfe5349bb37895d4c58834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cb2ffa9c92e148c4c660601c30203f5') in 0.013344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/Prefabs/PauseCanvas.prefab
+  artifactKey: Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseCanvas.prefab using Guid(cfa72606681b6e345833df425b3fb98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b05a2f65163dcb57c72d53ad9df5db80') in 0.016846 seconds 

@@ -1,0 +1,302 @@
+﻿Please ingest this script:
+```
+import os
+import yaml
+
+def removeUnityTagAlias(filepath):
+    """ removes unnecessary Unity tags and adds ID to node"""
+    result = str()
+
+    with open(filepath) as srcFile:
+        for lineNumber,line in enumerate(srcFile.readlines()): 
+            if line.startswith('--- !u!'):          
+                result += '\n--- ' + line.split(' ')[2]   # remove the tag, but keep file ID
+                result += '\nID: ' + line.split('&')[1]   # add file ID
+            else:
+                result += line
+
+    return (result)
+
+
+def loadYAML(filepath):
+    """ loads nodes from YAML and appends to list """
+    data = removeUnityTagAlias(filepath)
+    nodes = list()
+
+    for data in yaml.load_all(data):
+        nodes.append(data)
+    
+    return (nodes)
+
+
+def checkGameObjectName(nodes, name):
+    objID = None
+    for node in nodes:
+        if 'GameObject' in node.keys() and 'm_Name' in node['GameObject'].keys() and node['GameObject']['m_Name'] == name:
+            objID = node['ID']
+
+    if objID == None:
+        print("GameObject \'" + name + "\' not found")
+
+    return(objID)
+
+
+def checkFont(nodes):
+    fontID = checkGameObjectName(nodes, "ExitText")
+
+    guid = None
+    for node in nodes:
+        if 'MonoBehaviour' in node.keys() and node['MonoBehaviour']['m_GameObject']['fileID'] == fontID:
+            if 'm_FontData' in node['MonoBehaviour'].keys():
+                guid = node['MonoBehaviour']['m_FontData']['m_Font']['guid']
+    
+    flag = False
+    filename = 'Changa-Medium.ttf.meta'
+    path = 'Assets/Fonts/Changa'
+    filepath = None
+
+    for root, dirs, files in os.walk(path):
+        if filename in files:
+            filepath = os.path.join(root, filename)
+
+    if filepath is None:
+        print("Font not found")
+    else:
+        with open(filepath, 'r') as f:
+            for line in f:
+                if guid in line:
+                    print("Font: OK")
+                    flag = True
+        if flag == False:
+            print("Font incorrect")
+
+    return (fontID)     
+
+
+def checkText(nodes):
+    textID = checkGameObjectName(nodes, "ExitText")
+    bgID = checkGameObjectName(nodes, "ExitButton")
+
+    bgIDRT = None
+    for node in nodes:
+         if 'RectTransform' in node.keys() and 'm_GameObject' in node['RectTransform'].keys():
+            if node['RectTransform']['m_GameObject']['fileID'] == bgID:
+                bgIDRT = node['ID']
+
+    for node in nodes:
+        if 'RectTransform' in node.keys() and 'm_GameObject' in node['RectTransform'].keys():
+            if node['RectTransform']['m_GameObject']['fileID'] == textID:
+                if node['RectTransform']['m_Father']['fileID'] == bgIDRT:
+                    print("Parent / child: OK")
+                else:
+                    print("Text is not child of ExitButton")
+
+    checkFont(nodes)    
+
+    for node in nodes:
+        if 'MonoBehaviour' in node.keys() and node['MonoBehaviour']['m_GameObject']['fileID'] == textID:
+            if node['MonoBehaviour']['m_Color']['r'] == 1 and node['MonoBehaviour']['m_Color']['g'] == 1 and node['MonoBehaviour']['m_Color']['b'] == 1:
+                print("Text color: OK")
+            else:
+                print("Text color incorrect")
+            if node['MonoBehaviour']['m_FontData']['m_FontSize'] == 36 and node['MonoBehaviour']['m_FontData']['m_Alignment'] == 4 and node['MonoBehaviour']['m_FontData']['m_HorizontalOverflow'] == 1:
+                print("Font settings: OK")
+            else:
+                print("Font settings incorrect")
+            if node['MonoBehaviour']['m_Text'] == 'Exit':
+                print("Default text: OK")
+            else:
+                print("Default text incorrect")
+
+    return (textID)
+
+
+
+if __name__ == "__main__":
+    checkText(loadYAML('Assets/Prefabs/ExitButton.prefab'))"
+```
+
+
+With your feedback I modified it to convert the checks from Unity's built-in text component to TextMeshPro in a Unity YAML file. The script was refined to load the YAML file and extract the required data for analysis. . Our aim was to ensure the accurate detection and validation of TextMeshPro properties within the Unity YAML file
+
+Here is the second version:
+```
+import os
+import yaml
+
+def removeUnityTagAlias(filepath):
+    """ removes unnecessary Unity tags and adds ID to node"""
+    result = str()
+
+    with open(filepath) as srcFile:
+        for lineNumber,line in enumerate(srcFile.readlines()): 
+            if line.startswith('--- !u!'):          
+                result += '\n--- ' + line.split(' ')[2]   # remove the tag, but keep file ID
+                result += '\nID: ' + line.split('&')[1]   # add file ID
+            else:
+                result += line
+
+    return (result)
+
+
+def loadYAML(filepath):
+    """ loads nodes from YAML and appends to list """
+    data = removeUnityTagAlias(filepath)
+    nodes = list()
+
+    for data in yaml.load_all(data):
+        nodes.append(data)
+    
+    return (nodes)
+
+
+def checkGameObjectName(nodes, name):
+    objID = None
+    for node in nodes:
+        if 'GameObject' in node.keys() and 'm_Name' in node['GameObject'].keys() and node['GameObject']['m_Name'] == name:
+            objID = node['ID']
+
+    if objID == None:
+        print("GameObject \'" + name + "\' not found")
+
+    return(objID)
+
+def checkFont(nodes):
+    fontID = checkGameObjectName(nodes, "ExitText")
+
+    font_asset_guid = None
+    for node in nodes:
+        if 'MonoBehaviour' in node.keys() and node['MonoBehaviour']['m_GameObject']['fileID'] == fontID:
+            if 'm_fontAsset' in node['MonoBehaviour'].keys():
+                font_asset_guid = node['MonoBehaviour']['m_fontAsset']['guid']
+                # print("Font asset GUID in GameObject: ", font_asset_guid)  # Debug print
+
+    if font_asset_guid is None:
+        print("Font asset not found in GameObject")
+        return
+
+    # Get the font asset file
+    filename = 'Changa-Regular SDF.asset'
+    path = 'Assets/Fonts/Changa'
+    filepath = None
+
+    for root, dirs, files in os.walk(path):
+        if filename in files:
+            filepath = os.path.join(root, filename)
+
+    if filepath is None:
+        print("Font asset file not found")
+        return
+
+    # Get the GUID of the source font file from the font asset
+    source_font_file_guid = None
+    with open(filepath, 'r') as f:
+        for line in f:
+            if 'm_SourceFontFileGUID' in line:
+                source_font_file_guid = line.split(': ')[1].strip()
+                break
+
+    if source_font_file_guid is None:
+        print("Source font file GUID not found in the font asset")
+        return
+
+    # print("Source font file GUID in asset file: ", source_font_file_guid)  # Debug print
+
+    # Look for the actual source font file we are looking for and grab its GUID
+    font_file_path = 'Assets/Fonts/Changa/Changa-Regular.ttf.meta'
+    actual_source_font_guid = None
+
+    with open(font_file_path, 'r') as f:
+        f.readline()  # Skip first line
+        line = f.readline()  # Read second line
+        actual_source_font_guid = line.split(': ')[1].strip()  # Extract GUID
+
+    if actual_source_font_guid is None:
+        print("Actual source font GUID not found")
+        return
+
+    # print("Actual source font GUID: ", actual_source_font_guid)  # Debug print
+
+    # Compare the GUID from source font file in asset to actual source font file
+    if source_font_file_guid == actual_source_font_guid:
+        print("Font: OK")
+    else:
+        print("Font incorrect")
+
+def checkText(nodes):
+    textID = checkGameObjectName(nodes, "ExitText")
+    bgID = checkGameObjectName(nodes, "ExitButton")
+
+    bgIDRT = None
+    for node in nodes:
+        if 'RectTransform' in node.keys() and 'm_GameObject' in node['RectTransform'].keys():
+            if node['RectTransform']['m_GameObject']['fileID'] == bgID:
+                bgIDRT = node['ID']
+
+    for node in nodes:
+        if 'RectTransform' in node.keys() and 'm_GameObject' in node['RectTransform'].keys():
+            if node['RectTransform']['m_GameObject']['fileID'] == textID:
+                if node['RectTransform']['m_Father']['fileID'] == bgIDRT:
+                    print("Parent / child: OK")
+                else:
+                    print("Text is not child of ExitButton")
+
+    checkFont(nodes)
+
+    for node in nodes:
+        if 'MonoBehaviour' in node.keys() and node['MonoBehaviour']['m_GameObject']['fileID'] == textID:
+            if 'm_Color' in node['MonoBehaviour'].keys():
+                color = node['MonoBehaviour']['m_Color']
+                if color['r'] == 1 and color['g'] == 1 and color['b'] == 1:
+                    print("Text color: OK")
+                else:
+                    print("Text color incorrect")
+            if 'm_fontSize' in node['MonoBehaviour'].keys() and 'm_HorizontalAlignment' in node['MonoBehaviour'].keys() and 'm_VerticalAlignment' in node['MonoBehaviour'].keys() and 'm_overflowMode' in node['MonoBehaviour'].keys():
+                if node['MonoBehaviour']['m_fontSize'] == 36 and node['MonoBehaviour']['m_HorizontalAlignment'] == 2 and node['MonoBehaviour']['m_VerticalAlignment'] == 512 and node['MonoBehaviour']['m_overflowMode'] == 0:
+                    print("Font settings: OK")
+                else:
+                    print("Font settings incorrect")
+            if 'm_text' in node['MonoBehaviour'].keys():
+                if node['MonoBehaviour']['m_text'] == 'Exit':
+                    print("Default text: OK")
+                else:
+                    print("Default text incorrect")
+
+    return (textID)
+
+if __name__ == "__main__":
+    checkText(loadYAML('Assets/Prefabs/ExitButton.prefab'))
+```
+
+Please identify and summarize the changes made
+
+
+
+---
+
+Now I need to perform this task for other checker scripts that are currently built to use the UI system.
+
+Can you help me generate a prompt for ChatGPT to guide it in helping me through this process?
+
+---
+
+I have a set of checker scripts that are currently built to use the UI system in Unity. I would like to update these scripts to use the TextMeshPro component instead. The scripts are written in Python and perform checks on various properties of text objects in Unity scenes. I need assistance in modifying these scripts.
+
+Here is the checker script that needs to be updated:
+```
+```
+
+To properly modify the script, it's crucial to refer to a YAML file that contains all the necessary keys our script relies on. The provided YAML file serves as the reference for building the script and should be used exactly as provided. It's important to avoid making assumptions or relying on external knowledge to create the YAML file. Please make sure that the modified Python script accurately references the keys present in the provided YAML file.
+```
+```
+
+To assist you with the modifications, I've prepared an example script that has already been updated. You can refer to this script for guidance on how to check font assets, text color, font settings, and default text, as the referencing of elements is different compared to the previous UI Text component.
+
+Here is the example updated script:
+
+python
+Copy code
+# Place the script with existing fixes/updates here
+The specific changes required are to update the checkFont and checkText functions to work with the TextMeshPro component, which stores data differently in YAML compared to the UI Text component. Pay attention to the modifications related to font assets, text color, font settings, and default text. Please ensure accuracy by avoiding incorrect capitalization or referencing of keys from the YAML file.
+
+Can you assist me in making these necessary changes to the functions?
