@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine.UI;
 using TMPro;
  
-public class TextToTextMeshPro : Editor
+public class UITextToTMPTextConverter : Editor
 {
     public class TextMeshProSettings
     {
